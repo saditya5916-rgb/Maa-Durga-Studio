@@ -1,0 +1,4051 @@
+< !DOCTYPE
+html >
+< html
+lang = "en"
+
+
+class ="light" >
+
+< head >
+< meta
+charset = "UTF-8" >
+< meta
+name = "viewport"
+content = "width=device-width, initial-scale=1.0" >
+< title > Maa
+Durga
+All - in -One
+Studio < / title >
+< script
+src = "https://cdn.tailwindcss.com" > < / script >
+< link
+rel = "stylesheet"
+href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" >
+< link
+href = "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Caveat:wght@600;700&family=Fira+Code:wght@400;500&display=swap"
+rel = "stylesheet" >
+< script >
+tailwind.config = {
+    darkMode: 'class',
+    theme: {
+        extend: {
+            fontFamily: {
+                sans: ['Inter', 'sans-serif'],
+                script: ['Caveat', 'cursive'],
+                mono: ['Fira Code', 'monospace'],
+            },
+            colors: {
+                navy: {
+                    800: '#111936',
+                    900: '#0b1124',
+                    950: '#070b19',
+                }
+            }
+        }
+    }
+}
+< / script >
+< style >
+/ *Custom
+scrollbar * /
+::-webkit - scrollbar
+{
+    width: 6px;
+height: 6
+px;
+}
+::-webkit - scrollbar - track
+{
+    background: rgba(0, 0, 0, 0.05);
+}
+::-webkit - scrollbar - thumb
+{
+    background: rgba(59, 130, 246, 0.4);
+border - radius: 10
+px;
+}
+::-webkit - scrollbar - thumb: hover
+{
+    background: rgba(59, 130, 246, 0.7);
+}
+
+.banner - gradient
+{
+    background: linear - gradient(105deg,  # fff5eb 0%, #e0f2fe 45%, #ffffff 75%, #dbeafe 100%);
+}
+.dark.banner - gradient
+{
+    background: linear - gradient(105deg,  # 2a1810 0%, #0f172a 45%, #1e293b 75%, #172554 100%);
+}
+
+.card - hover
+{
+    transition: all 0.25s cubic - bezier(0.4, 0, 0.2, 1);
+}
+.card - hover: hover
+{
+    transform: translateY(-4px);
+box - shadow: 0
+12
+px
+24
+px - 6
+px
+rgba(0, 0, 0, 0.2);
+}
+
+.sidebar - item
+{
+    transition: all 0.2s ease;
+}
+.sidebar - item: hover:not (.active-nav)
+{
+    background: rgba(255, 255, 255, 0.08);
+transform: translateX(4
+px);
+}
+.active - nav
+{
+    background: linear - gradient(90deg,  # 1d4ed8 0%, #2563eb 100%);
+box - shadow: 0
+4
+px
+12
+px
+rgba(37, 99, 235, 0.4);
+}
+
+@keyframes
+
+
+pulse - glow
+{
+    0 %, 100 % {filter: drop - shadow(0 0 8px rgba(245, 158, 11, 0.6));}
+50 % {filter: drop - shadow(0 0 16px rgba(239, 68, 68, 0.9));}
+}
+.divine - glow
+{
+    animation: pulse - glow 3s infinite;
+}
+< / style >
+    < / head >
+        < body
+
+
+class ="bg-slate-950 text-slate-800 dark:text-slate-100 font-sans antialiased selection:bg-blue-600 selection:text-white overflow-hidden h-screen flex flex-col" >
+
+< header
+
+
+class ="h-14 bg-gradient-to-r from-navy-950 via-navy-900 to-indigo-950 text-white flex items-center justify-between px-4 border-b border-white/10 shrink-0 select-none z-30" >
+
+< !-- Left
+Brand -->
+< div
+
+
+class ="flex items-center gap-3 cursor-pointer" onclick="switchView('dashboard')" >
+
+< div
+
+
+class ="w-10 h-10 rounded-full bg-gradient-to-br from-amber-400 via-orange-500 to-red-600 p-0.5 shadow-lg shadow-orange-500/30 flex items-center justify-center relative" >
+
+< div
+
+
+class ="w-full h-full rounded-full bg-red-950 flex items-center justify-center overflow-hidden" >
+
+< !-- Custom
+SVG
+Emblem
+for Maa Durga -->
+< svg
+viewBox = "0 0 64 64"
+
+
+class ="w-8 h-8 divine-glow" >
+
+< circle
+cx = "32"
+cy = "32"
+r = "28"
+fill = "url(#haloGrad)"
+opacity = "0.3" / >
+< defs >
+< radialGradient
+id = "haloGrad" >
+< stop
+offset = "0%"
+stop - color = "#fde047" / >
+< stop
+offset = "100%"
+stop - color = "#dc2626"
+stop - opacity = "0" / >
+< / radialGradient >
+< / defs >
+< !-- Crown & Face
+Symbolic
+Representation -->
+< path
+d = "M20 26 L32 10 L44 26 Z"
+fill = "#fbbf24"
+stroke = "#f59e0b"
+stroke - width = "1.5" / >
+< circle
+cx = "32"
+cy = "18"
+r = "3"
+fill = "#ef4444" / >
+< path
+d = "M22 26 C22 40, 42 40, 42 26 Z"
+fill = "#fcd34d" / >
+< !-- Third
+Eye & Tilak -->
+< path
+d = "M32 27 L30 30 L32 32 L34 30 Z"
+fill = "#dc2626" / >
+< !-- Eyes -->
+< ellipse
+cx = "27"
+cy = "31"
+rx = "2.5"
+ry = "1"
+fill = "#1e293b" / >
+< ellipse
+cx = "37"
+cy = "31"
+rx = "2.5"
+ry = "1"
+fill = "#1e293b" / >
+< !--Nose
+ring -->
+< circle
+cx = "34"
+cy = "35"
+r = "2"
+fill = "none"
+stroke = "#f59e0b"
+stroke - width = "1" / >
+< !-- Trishul
+Side -->
+< path
+d = "M49 14 L49 50 M45 18 C45 24, 53 24, 53 18"
+stroke = "#fbbf24"
+stroke - width = "2"
+fill = "none"
+stroke - linecap = "round" / >
+< / svg >
+< / div >
+< / div >
+< div >
+< h1
+
+
+class ="font-bold text-base tracking-wide leading-tight flex items-center gap-2" >
+
+
+Maa
+Durga
+All - in -One
+Studio
+< / h1 >
+< p
+
+
+class ="text-[11px] text-blue-200/80 font-medium tracking-wider" > Print • Design • Convert • Create < / p >
+
+< / div >
+< / div >
+
+< !-- Center
+Quick
+Command
+Bar
+Trigger -->
+< div
+
+
+class ="hidden md:flex items-center" >
+
+< button
+onclick = "toggleTerminal()"
+
+
+class ="flex items-center gap-3 bg-white/10 hover:bg-white/15 border border-white/15 rounded-full px-4 py-1.5 text-xs text-blue-100 transition shadow-inner" >
+
+< i
+
+
+class ="fa-solid fa-terminal text-amber-400" > < / i >
+
+< span > Run
+Studio
+Command... < / span >
+< kbd
+
+
+class ="bg-navy-950/80 text-slate-300 px-2 py-0.5 rounded text-[10px] font-mono border border-white/10" > Ctrl + K < / kbd >
+
+< / button >
+< / div >
+
+< !-- Right
+Controls -->
+< div
+
+
+class ="flex items-center gap-4" >
+
+< !-- Theme
+Toggle
+Pill -->
+< button
+id = "themeToggleBtn"
+onclick = "toggleTheme()"
+
+
+class ="relative w-16 h-8 rounded-full bg-blue-600/40 border border-blue-400/30 flex items-center p-1 transition duration-300 cursor-pointer" title="Switch Light / Dark Theme" >
+
+< div
+id = "themeIndicator"
+
+
+class ="w-6 h-6 rounded-full bg-blue-500 text-white flex items-center justify-center shadow-md transform transition-transform duration-300 translate-x-0" >
+
+< i
+
+
+class ="fa-solid fa-sun text-xs" id="themeIcon" > < / i >
+
+< / div >
+< div
+
+
+class ="flex justify-between w-full px-1.5 text-xs pointer-events-none" >
+
+< span
+
+
+class ="opacity-0" > < i class ="fa-solid fa-sun" > < / i > < / span >
+
+< span
+
+
+class ="text-slate-300" > < i class ="fa-solid fa-moon" > < / i > < / span >
+
+< / div >
+< / button >
+
+< !-- Terminal
+Button(Mobile & Desktop) -->
+< button
+onclick = "toggleTerminal()"
+
+
+class ="flex items-center gap-1.5 text-xs font-medium text-amber-300 hover:text-amber-200 bg-amber-500/10 border border-amber-400/20 px-2.5 py-1.5 rounded-lg transition" title="Open Command Runner" >
+
+< i
+
+
+class ="fa-solid fa-code" > < / i >
+
+< span
+
+
+class ="hidden sm:inline" > CLI Console < / span >
+
+< / button >
+
+< !-- Settings -->
+< button
+onclick = "openModal('settingsModal')"
+
+
+class ="flex items-center gap-1.5 text-xs font-medium text-slate-200 hover:text-white transition" >
+
+< i
+
+
+class ="fa-solid fa-gear text-slate-300" > < / i >
+
+< span
+
+
+class ="hidden sm:inline" > Settings < / span >
+
+< / button >
+
+< !-- About -->
+< button
+onclick = "openModal('aboutModal')"
+
+
+class ="flex items-center gap-1.5 text-xs font-medium text-slate-200 hover:text-white transition" >
+
+< i
+
+
+class ="fa-solid fa-circle-info text-slate-300" > < / i >
+
+< span
+
+
+class ="hidden sm:inline" > About < / span >
+
+< / button >
+
+< !-- Window
+Controls -->
+< div
+
+
+class ="hidden sm:flex items-center gap-3 ml-2 pl-3 border-l border-white/10 text-slate-400" >
+
+< button
+onclick = "showToast('Window Minimized to Tray')"
+
+
+class ="hover:text-white transition" > < i class ="fa-solid fa-minus text-xs" > < / i > < / button >
+
+< button
+onclick = "toggleFullscreen()"
+
+
+class ="hover:text-white transition" > < i class ="fa-regular fa-square text-xs" > < / i > < / button >
+
+< button
+onclick = "showToast('Studio session saved!')"
+
+
+class ="hover:text-red-400 transition" > < i class ="fa-solid fa-xmark text-sm" > < / i > < / button >
+
+< / div >
+< / div >
+< / header >
+
+< div
+
+
+class ="flex flex-1 overflow-hidden" >
+
+< !-- Sidebar -->
+< aside
+
+
+class ="w-60 bg-navy-900 text-slate-200 flex flex-col justify-between shrink-0 border-r border-white/5 select-none overflow-y-auto" >
+
+< !-- Navigation
+Links -->
+< nav
+
+
+class ="p-3 space-y-1" >
+
+< button
+onclick = "switchView('dashboard')"
+id = "nav-dashboard"
+
+
+class ="sidebar-item active-nav w-full flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-xs font-semibold text-white" >
+
+< div
+
+
+class ="w-7 h-7 rounded-lg bg-white/20 flex items-center justify-center text-white" >
+
+< i
+
+
+class ="fa-solid fa-house" > < / i >
+
+< / div >
+< span > Dashboard < / span >
+< / button >
+
+< button
+onclick = "switchView('pdf')"
+id = "nav-pdf"
+
+
+class ="sidebar-item w-full flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-xs font-medium text-slate-300 hover:text-white" >
+
+< div
+
+
+class ="w-7 h-7 rounded-lg bg-rose-500/20 border border-rose-500/30 flex items-center justify-center text-rose-400 font-bold text-[10px]" >
+
+
+PDF
+< / div >
+< span > PDF
+Tools < / span >
+< / button >
+
+< button
+onclick = "switchView('word')"
+id = "nav-word"
+
+
+class ="sidebar-item w-full flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-xs font-medium text-slate-300 hover:text-white" >
+
+< div
+
+
+class ="w-7 h-7 rounded-lg bg-blue-500/20 border border-blue-500/30 flex items-center justify-center text-blue-400" >
+
+< i
+
+
+class ="fa-solid fa-file-word" > < / i >
+
+< / div >
+< span > Word / Excel
+Converter < / span >
+< / button >
+
+< button
+onclick = "switchView('photo')"
+id = "nav-photo"
+
+
+class ="sidebar-item w-full flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-xs font-medium text-slate-300 hover:text-white" >
+
+< div
+
+
+class ="w-7 h-7 rounded-lg bg-teal-500/20 border border-teal-500/30 flex items-center justify-center text-teal-400" >
+
+< i
+
+
+class ="fa-solid fa-image" > < / i >
+
+< / div >
+< span > Photo
+Converter < / span >
+< / button >
+
+< button
+onclick = "switchView('media')"
+id = "nav-media"
+
+
+class ="sidebar-item w-full flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-xs font-medium text-slate-300 hover:text-white" >
+
+< div
+
+
+class ="w-7 h-7 rounded-lg bg-purple-500/20 border border-purple-500/30 flex items-center justify-center text-purple-400" >
+
+< i
+
+
+class ="fa-solid fa-film" > < / i >
+
+< / div >
+< span > Video / Audio
+Converter < / span >
+< / button >
+
+< button
+onclick = "switchView('corel')"
+id = "nav-corel"
+
+
+class ="sidebar-item w-full flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-xs font-medium text-slate-300 hover:text-white" >
+
+< div
+
+
+class ="w-7 h-7 rounded-lg bg-green-500/20 border border-green-500/30 flex items-center justify-center text-green-400" >
+
+< i
+
+
+class ="fa-solid fa-parachute-box" > < / i >
+
+< / div >
+< span > CorelDRAW
+Support < / span >
+< / button >
+
+< button
+onclick = "switchView('poster')"
+id = "nav-poster"
+
+
+class ="sidebar-item w-full flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-xs font-medium text-slate-300 hover:text-white" >
+
+< div
+
+
+class ="w-7 h-7 rounded-lg bg-pink-500/20 border border-pink-500/30 flex items-center justify-center text-pink-400" >
+
+< i
+
+
+class ="fa-solid fa-palette" > < / i >
+
+< / div >
+< span > AI
+Poster & Flex
+Designer < / span >
+< / button >
+
+< button
+onclick = "switchView('print')"
+id = "nav-print"
+
+
+class ="sidebar-item w-full flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-xs font-medium text-slate-300 hover:text-white" >
+
+< div
+
+
+class ="w-7 h-7 rounded-lg bg-orange-500/20 border border-orange-500/30 flex items-center justify-center text-orange-400" >
+
+< i
+
+
+class ="fa-solid fa-print" > < / i >
+
+< / div >
+< span > Printing
+Press
+Tools < / span >
+< / button >
+
+< button
+onclick = "switchView('billing')"
+id = "nav-billing"
+
+
+class ="sidebar-item w-full flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-xs font-medium text-slate-300 hover:text-white" >
+
+< div
+
+
+class ="w-7 h-7 rounded-lg bg-sky-500/20 border border-sky-500/30 flex items-center justify-center text-sky-400" >
+
+< i
+
+
+class ="fa-solid fa-file-invoice-dollar" > < / i >
+
+< / div >
+< span > Billing
+System < / span >
+< / button >
+
+< button
+onclick = "switchView('support')"
+id = "nav-support"
+
+
+class ="sidebar-item w-full flex items-center gap-3 px-3.5 py-2.5 rounded-xl text-xs font-medium text-slate-300 hover:text-white" >
+
+< div
+
+
+class ="w-7 h-7 rounded-lg bg-indigo-500/20 border border-indigo-500/30 flex items-center justify-center text-indigo-400" >
+
+< i
+
+
+class ="fa-solid fa-headset" > < / i >
+
+< / div >
+< span > Help & Support < / span >
+< / button >
+< / nav >
+
+< !-- Bottom
+Decorative
+Card -->
+< div
+
+
+class ="p-3" >
+
+< div
+
+
+class ="relative rounded-2xl overflow-hidden bg-gradient-to-br from-indigo-950 via-navy-950 to-slate-900 p-4 border border-white/10 shadow-lg" >
+
+< div
+
+
+class ="relative z-10" >
+
+< p
+
+
+class ="text-xs text-blue-200 font-medium" > Your Vision < / p >
+
+< p
+
+
+class ="text-sm text-white font-bold tracking-wide mt-0.5" > Our Design < / p >
+
+< / div >
+< !-- Colorful
+Ribbon
+Wave
+SVG -->
+< svg
+viewBox = "0 0 200 80"
+
+
+class ="w-full h-14 mt-2 -mb-2 -mx-2 opacity-90" >
+
+< path
+d = "M0,60 Q50,20 100,50 T200,20 L200,80 L0,80 Z"
+fill = "url(#wave1)"
+opacity = "0.7" / >
+< path
+d = "M0,70 Q60,30 120,60 T200,30 L200,80 L0,80 Z"
+fill = "url(#wave2)" / >
+< defs >
+< linearGradient
+id = "wave1"
+x1 = "0%"
+y1 = "0%"
+x2 = "100%"
+y2 = "0%" >
+< stop
+offset = "0%"
+stop - color = "#3b82f6" / >
+< stop
+offset = "50%"
+stop - color = "#ec4899" / >
+< stop
+offset = "100%"
+stop - color = "#f59e0b" / >
+< / linearGradient >
+< linearGradient
+id = "wave2"
+x1 = "0%"
+y1 = "0%"
+x2 = "100%"
+y2 = "0%" >
+< stop
+offset = "0%"
+stop - color = "#06b6d4" / >
+< stop
+offset = "50%"
+stop - color = "#8b5cf6" / >
+< stop
+offset = "100%"
+stop - color = "#ef4444" / >
+< / linearGradient >
+< / defs >
+< / svg >
+< / div >
+< / div >
+< / aside >
+
+< main
+
+
+class ="flex-1 bg-slate-100 dark:bg-slate-900 rounded-tl-2xl overflow-y-auto p-4 md:p-6 transition-colors duration-300 relative" >
+
+< !-- VIEW: DASHBOARD(DEFAULT) -->
+< div
+id = "view-dashboard"
+
+
+class ="space-y-5 max-w-7xl mx-auto" >
+
+< !-- Hero
+Banner -->
+< div
+
+
+class ="relative rounded-2xl banner-gradient border border-blue-200/60 dark:border-slate-700 shadow-sm overflow-hidden" >
+
+< !-- Date & Time
+Pill
+Top
+Right -->
+< div
+
+
+class ="md:absolute top-3 right-4 z-20 flex items-center justify-end gap-4 bg-white/80 dark:bg-slate-800/90 backdrop-blur-md px-4 py-1.5 rounded-full text-xs font-medium text-slate-600 dark:text-slate-300 shadow-sm border border-slate-200/60 dark:border-slate-700 m-3 md:m-0" >
+
+< span
+
+
+class ="flex items-center gap-1.5" >
+
+< i
+
+
+class ="fa-regular fa-calendar text-blue-600 dark:text-blue-400" > < / i >
+
+< span
+id = "liveDate" > Tuesday, 20
+October
+2026 < / span >
+< / span >
+< span
+
+
+class ="text-slate-300 dark:text-slate-600" > | < / span >
+
+< span
+
+
+class ="flex items-center gap-1.5" >
+
+< i
+
+
+class ="fa-regular fa-clock text-blue-600 dark:text-blue-400" > < / i >
+
+< span
+id = "liveTime" > 12:15
+PM < / span >
+< / span >
+< / div >
+
+< div
+
+
+class ="grid grid-cols-1 lg:grid-cols-12 items-center p-4 md:p-6 gap-6" >
+
+< !-- Left
+Illustration: Maa
+Durga
+on
+Tiger
+Art -->
+< div
+
+
+class ="lg:col-span-4 flex justify-center" >
+
+< div
+
+
+class ="relative w-64 h-44 rounded-xl overflow-hidden shadow-md border-2 border-amber-400/60 bg-gradient-to-b from-amber-100 via-orange-100 to-amber-50 flex items-center justify-center group" >
+
+< !-- Detailed
+Devotional
+SVG
+Illustration -->
+< svg
+viewBox = "0 0 300 210"
+
+
+class ="w-full h-full object-cover" >
+
+< defs >
+< radialGradient
+id = "sunburst"
+cx = "50%"
+cy = "50%"
+r = "50%" >
+< stop
+offset = "0%"
+stop - color = "#fef08a" / >
+< stop
+offset = "60%"
+stop - color = "#fed7aa" / >
+< stop
+offset = "100%"
+stop - color = "#fdba74" / >
+< / radialGradient >
+< linearGradient
+id = "saree"
+x1 = "0"
+y1 = "0"
+x2 = "1"
+y2 = "1" >
+< stop
+offset = "0%"
+stop - color = "#dc2626" / >
+< stop
+offset = "100%"
+stop - color = "#991b1b" / >
+< / linearGradient >
+< / defs >
+< !-- Glowing
+Sun
+Background -->
+< rect
+width = "300"
+height = "210"
+fill = "url(#sunburst)" / >
+< circle
+cx = "150"
+cy = "100"
+r = "75"
+fill = "#fef9c3"
+opacity = "0.7" / >
+< circle
+cx = "150"
+cy = "100"
+r = "60"
+fill = "none"
+stroke = "#f59e0b"
+stroke - width = "1.5"
+stroke - dasharray = "4 3" / >
+
+< !-- Multiple
+Divine
+Arms(Symbolic
+Rays & Weapons) -->
+< g
+stroke = "#d97706"
+stroke - width = "3"
+stroke - linecap = "round" >
+< !-- Left
+Arms -->
+< path
+d = "M125 95 L75 65" / >
+< path
+d = "M125 105 L65 95" / >
+< path
+d = "M125 115 L75 125" / >
+< !-- Right
+Arms -->
+< path
+d = "M175 95 L225 65" / >
+< path
+d = "M175 105 L235 95" / >
+< path
+d = "M175 115 L225 125" / >
+< / g >
+< !-- Trishul -->
+< line
+x1 = "75"
+y1 = "40"
+x2 = "75"
+y2 = "160"
+stroke = "#b45309"
+stroke - width = "3" / >
+< path
+d = "M67 48 C67 60, 83 60, 83 48"
+fill = "none"
+stroke = "#f59e0b"
+stroke - width = "2.5" / >
+< polygon
+points = "75,35 71,48 79,48"
+fill = "#f59e0b" / >
+< !-- Chakra -->
+< circle
+cx = "225"
+cy = "65"
+r = "10"
+fill = "none"
+stroke = "#eab308"
+stroke - width = "3"
+stroke - dasharray = "3 2" / >
+< !-- Lotus -->
+< circle
+cx = "235"
+cy = "95"
+r = "6"
+fill = "#ec4899" / >
+
+< !-- Tiger
+Representation(Left
+Foreground) -->
+< g
+transform = "translate(45, 125)" >
+< ellipse
+cx = "45"
+cy = "45"
+rx = "38"
+ry = "24"
+fill = "#f97316" / >
+< circle
+cx = "25"
+cy = "25"
+r = "20"
+fill = "#fb923c" / >
+< !-- Tiger
+Stripes -->
+< path
+d = "M15 15 L22 20 M35 15 L28 20 M45 35 L55 45 M60 32 L70 42"
+stroke = "#1e293b"
+stroke - width = "2.5" / >
+< !-- Tiger
+Eyes & Nose -->
+< circle
+cx = "18"
+cy = "22"
+r = "2.5"
+fill = "#fef08a" / >
+< circle
+cx = "30"
+cy = "22"
+r = "2.5"
+fill = "#fef08a" / >
+< polygon
+points = "22,28 26,28 24,32"
+fill = "#dc2626" / >
+< / g >
+
+< !-- Maa
+Durga
+Central
+Figure -->
+< path
+d = "M115 190 L135 100 L165 100 L185 190 Z"
+fill = "url(#saree)"
+stroke = "#fbbf24"
+stroke - width = "2" / >
+< !-- Green
+Choli & Gold
+Garland -->
+< path
+d = "M132 100 L168 100 L162 135 L138 135 Z"
+fill = "#15803d" / >
+< path
+d = "M135 100 Q150 140 165 100"
+fill = "none"
+stroke = "#fde047"
+stroke - width = "4"
+stroke - dasharray = "4 2" / >
+< !-- Face -->
+< ellipse
+cx = "150"
+cy = "78"
+rx = "16"
+ry = "20"
+fill = "#fcd34d" / >
+< !-- Mukut(Crown) -->
+< polygon
+points = "132,65 150,30 168,65"
+fill = "#eab308"
+stroke = "#ca8a04"
+stroke - width = "1.5" / >
+< circle
+cx = "150"
+cy = "48"
+r = "4"
+fill = "#dc2626" / >
+< circle
+cx = "150"
+cy = "30"
+r = "5"
+fill = "#fde047" / >
+< !-- Facial
+features -->
+< path
+d = "M142 76 Q145 73 148 76"
+stroke = "#1e293b"
+stroke - width = "1.5"
+fill = "none" / >
+< path
+d = "M152 76 Q155 73 158 76"
+stroke = "#1e293b"
+stroke - width = "1.5"
+fill = "none" / >
+< circle
+cx = "150"
+cy = "70"
+r = "2"
+fill = "#dc2626" / >
+< path
+d = "M147 86 Q150 89 153 86"
+stroke = "#dc2626"
+stroke - width = "2"
+fill = "none" / >
+< / svg >
+< div
+
+
+class ="absolute bottom-1.5 right-1.5 bg-black/60 backdrop-blur-sm text-amber-300 text-[10px] px-2 py-0.5 rounded-full font-medium" >
+
+
+Jai
+Maa
+Durga
+< / div >
+< / div >
+< / div >
+
+< !-- Center
+Welcome
+Text -->
+< div
+
+
+class ="lg:col-span-5 space-y-2 text-center lg:text-left" >
+
+< p
+
+
+class ="text-sm font-semibold text-slate-700 dark:text-slate-300" > Welcome to < / p >
+
+< h2
+
+
+class ="text-2xl md:text-3xl font-extrabold tracking-tight text-navy-900 dark:text-white" >
+
+
+Maa
+Durga < span
+
+
+class ="text-blue-600 dark:text-blue-400" > All- in -One Studio < / span >
+
+< / h2 >
+< p
+
+
+class ="text-xs md:text-sm text-slate-600 dark:text-slate-300 font-medium" >
+
+
+All
+Your
+Printing & Design
+Solutions in One
+Place
+< / p >
+
+< !-- Feature
+Badges -->
+< div
+
+
+class ="pt-3 flex flex-wrap items-center justify-center lg:justify-start gap-4 text-xs font-semibold text-slate-700 dark:text-slate-200" >
+
+< span
+
+
+class ="flex items-center gap-1.5" >
+
+< span
+
+
+class ="w-5 h-5 rounded-full bg-blue-600 text-white flex items-center justify-center text-[10px]" > < i class ="fa-solid fa-bolt" > < / i > < / span >
+
+
+Fast
+< / span >
+< span
+
+
+class ="flex items-center gap-1.5" >
+
+< span
+
+
+class ="w-5 h-5 rounded-full bg-blue-600 text-white flex items-center justify-center text-[10px]" > < i class ="fa-solid fa-thumbs-up" > < / i > < / span >
+
+
+Easy
+to
+Use
+< / span >
+< span
+
+
+class ="flex items-center gap-1.5" >
+
+< span
+
+
+class ="w-5 h-5 rounded-full bg-blue-600 text-white flex items-center justify-center text-[10px]" > < i class ="fa-solid fa-shield-halved" > < / i > < / span >
+
+
+Professional
+< / span >
+< span
+
+
+class ="flex items-center gap-1.5" >
+
+< span
+
+
+class ="w-5 h-5 rounded-full bg-blue-600 text-white flex items-center justify-center text-[10px]" > < i class ="fa-solid fa-check" > < / i > < / span >
+
+
+Reliable
+< / span >
+< / div >
+< / div >
+
+< !-- Right
+Script
+Typography & Feather
+Art -->
+< div
+
+
+class ="lg:col-span-3 flex items-center justify-center lg:justify-end pr-4" >
+
+< div
+
+
+class ="flex items-center gap-2" >
+
+< div
+
+
+class ="font-script text-2xl md:text-3xl leading-7 text-navy-900 dark:text-blue-100 text-right font-bold" >
+
+< div > Create < / div >
+< div
+
+
+class ="text-blue-700 dark:text-blue-400" > Design < / div >
+
+< div > Print < / div >
+< div
+
+
+class ="text-indigo-800 dark:text-indigo-300" > Grow...< / div >
+
+< / div >
+< !-- Colorful
+Feather / Wing
+SVG -->
+< svg
+viewBox = "0 0 80 120"
+
+
+class ="w-16 h-24" >
+
+< path
+d = "M10,110 C20,70 40,40 75,15 C60,45 45,65 10,110 Z"
+fill = "#3b82f6" / >
+< path
+d = "M10,110 C25,80 50,55 78,35 C60,65 40,85 10,110 Z"
+fill = "#ec4899" / >
+< path
+d = "M10,110 C30,90 55,75 75,60 C55,85 35,100 10,110 Z"
+fill = "#fbbf24" / >
+< / svg >
+< / div >
+< / div >
+< / div >
+< / div >
+
+< div
+
+
+class ="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4" >
+
+< !-- Total
+Tools -->
+< div
+onclick = "toggleTerminal()"
+
+
+class ="bg-white dark:bg-slate-800 p-4 rounded-2xl border border-blue-100 dark:border-slate-700 shadow-sm flex items-center gap-4 cursor-pointer hover:border-blue-400 transition" >
+
+< div
+
+
+class ="w-12 h-12 rounded-full bg-blue-600 text-white flex items-center justify-center text-lg shadow-md shadow-blue-500/20 shrink-0" >
+
+< i
+
+
+class ="fa-regular fa-file-lines" > < / i >
+
+< / div >
+< div >
+< p
+
+
+class ="text-xs font-semibold text-blue-600 dark:text-blue-400" > Total Tools < / p >
+
+< p
+
+
+class ="text-2xl font-extrabold text-slate-800 dark:text-white leading-tight" > 8 < / p >
+
+< p
+
+
+class ="text-[11px] text-slate-400" > All- in -One Solution < / p >
+
+< / div >
+< / div >
+
+< !-- Active
+Modules -->
+< div
+onclick = "runQuickCommand('status')"
+
+
+class ="bg-white dark:bg-slate-800 p-4 rounded-2xl border border-emerald-100 dark:border-slate-700 shadow-sm flex items-center gap-4 cursor-pointer hover:border-emerald-400 transition" >
+
+< div
+
+
+class ="w-12 h-12 rounded-full bg-emerald-500 text-white flex items-center justify-center text-lg shadow-md shadow-emerald-500/20 shrink-0" >
+
+< i
+
+
+class ="fa-solid fa-check" > < / i >
+
+< / div >
+< div >
+< p
+
+
+class ="text-xs font-semibold text-emerald-600 dark:text-emerald-400" > Active Modules < / p >
+
+< p
+
+
+class ="text-2xl font-extrabold text-slate-800 dark:text-white leading-tight" > 8 < / p >
+
+< p
+
+
+class ="text-[11px] text-slate-400" > Ready to Use < / p >
+
+< / div >
+< / div >
+
+< !-- Premium
+Version -->
+< div
+onclick = "openModal('aboutModal')"
+
+
+class ="bg-white dark:bg-slate-800 p-4 rounded-2xl border border-purple-100 dark:border-slate-700 shadow-sm flex items-center gap-4 cursor-pointer hover:border-purple-400 transition" >
+
+< div
+
+
+class ="w-12 h-12 rounded-full bg-purple-600 text-white flex items-center justify-center text-lg shadow-md shadow-purple-500/20 shrink-0" >
+
+< i
+
+
+class ="fa-solid fa-star" > < / i >
+
+< / div >
+< div >
+< p
+
+
+class ="text-xs font-semibold text-purple-600 dark:text-purple-400" > Premium Version < / p >
+
+< p
+
+
+class ="text-2xl font-extrabold text-slate-800 dark:text-white leading-tight" > v2.0 < / p >
+
+< p
+
+
+class ="text-[11px] text-slate-400" > Better Performance < / p >
+
+< / div >
+< / div >
+
+< !-- Support
+24 / 7 -->
+< div
+onclick = "switchView('support')"
+
+
+class ="bg-white dark:bg-slate-800 p-4 rounded-2xl border border-amber-100 dark:border-slate-700 shadow-sm flex items-center gap-4 cursor-pointer hover:border-amber-400 transition" >
+
+< div
+
+
+class ="w-12 h-12 rounded-full bg-amber-500 text-white flex items-center justify-center text-lg shadow-md shadow-amber-500/20 shrink-0" >
+
+< i
+
+
+class ="fa-solid fa-headset" > < / i >
+
+< / div >
+< div >
+< p
+
+
+class ="text-xs font-semibold text-amber-600 dark:text-amber-400" > Support < / p >
+
+< p
+
+
+class ="text-2xl font-extrabold text-slate-800 dark:text-white leading-tight" > 24 / 7 < / p >
+
+< p
+
+
+class ="text-[11px] text-slate-400" > We're Here to Help</p>
+
+< / div >
+< / div >
+< / div >
+
+< div
+
+
+class ="flex items-center justify-between pt-1" >
+
+< div
+
+
+class ="flex items-center gap-2" >
+
+< i
+
+
+class ="fa-solid fa-border-all text-navy-900 dark:text-blue-400 text-lg" > < / i >
+
+< h3
+
+
+class ="font-bold text-base text-slate-800 dark:text-white" > All Tools < / h3 >
+
+< / div >
+< button
+onclick = "toggleTerminal()"
+
+
+class ="text-xs font-semibold text-blue-600 dark:text-blue-400 hover:underline flex items-center gap-1" >
+
+< span > Quick
+Access(Run
+Command) < / span >
+< i
+
+
+class ="fa-solid fa-arrow-right text-[10px]" > < / i >
+
+< / button >
+< / div >
+
+< !-- 8
+Colorful
+Tool
+Cards
+Grid -->
+< div
+
+
+class ="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4" >
+
+< !-- 1.
+PDF
+Converter -->
+< div
+onclick = "switchView('pdf')"
+
+
+class ="card-hover cursor-pointer rounded-2xl bg-gradient-to-br from-rose-500 to-red-600 p-5 text-white relative overflow-hidden shadow-md" >
+
+< div
+
+
+class ="flex items-start gap-3.5" >
+
+< div
+
+
+class ="w-12 h-12 rounded-2xl bg-white flex items-center justify-center text-red-600 shadow-sm shrink-0 font-bold text-xs" >
+
+< i
+
+
+class ="fa-regular fa-file-pdf text-2xl" > < / i >
+
+< / div >
+< div
+
+
+class ="pr-4" >
+
+< h4
+
+
+class ="font-bold text-sm" > PDF Converter < / h4 >
+
+< p
+
+
+class ="text-[11px] text-rose-100 mt-1 leading-relaxed" >
+
+
+Convert, Merge, Split, Protect and more...
+< / p >
+< / div >
+< / div >
+< div
+
+
+class ="mt-6 flex justify-end" >
+
+< span
+
+
+class ="w-7 h-7 rounded-full bg-white/20 flex items-center justify-center text-xs hover:bg-white/30 transition" >
+
+< i
+
+
+class ="fa-solid fa-arrow-right" > < / i >
+
+< / span >
+< / div >
+< / div >
+
+< !-- 2.
+Word / Excel
+Converter -->
+< div
+onclick = "switchView('word')"
+
+
+class ="card-hover cursor-pointer rounded-2xl bg-gradient-to-br from-blue-500 to-blue-700 p-5 text-white relative overflow-hidden shadow-md" >
+
+< div
+
+
+class ="flex items-start gap-3.5" >
+
+< div
+
+
+class ="w-12 h-12 rounded-2xl bg-white flex items-center justify-center text-blue-600 shadow-sm shrink-0" >
+
+< i
+
+
+class ="fa-solid fa-file-excel text-2xl" > < / i >
+
+< / div >
+< div
+
+
+class ="pr-4" >
+
+< h4
+
+
+class ="font-bold text-sm" > Word / Excel Converter < / h4 >
+
+< p
+
+
+class ="text-[11px] text-blue-100 mt-1 leading-relaxed" >
+
+
+Convert
+Word, Excel
+to
+PDF and other
+formats...
+< / p >
+< / div >
+< / div >
+< div
+
+
+class ="mt-6 flex justify-end" >
+
+< span
+
+
+class ="w-7 h-7 rounded-full bg-white/20 flex items-center justify-center text-xs hover:bg-white/30 transition" >
+
+< i
+
+
+class ="fa-solid fa-arrow-right" > < / i >
+
+< / span >
+< / div >
+< / div >
+
+< !-- 3.
+Photo
+Converter -->
+< div
+onclick = "switchView('photo')"
+
+
+class ="card-hover cursor-pointer rounded-2xl bg-gradient-to-br from-teal-500 to-emerald-600 p-5 text-white relative overflow-hidden shadow-md" >
+
+< div
+
+
+class ="flex items-start gap-3.5" >
+
+< div
+
+
+class ="w-12 h-12 rounded-2xl bg-white flex items-center justify-center text-teal-600 shadow-sm shrink-0" >
+
+< i
+
+
+class ="fa-regular fa-image text-2xl" > < / i >
+
+< / div >
+< div
+
+
+class ="pr-4" >
+
+< h4
+
+
+class ="font-bold text-sm" > Photo Converter < / h4 >
+
+< p
+
+
+class ="text-[11px] text-teal-100 mt-1 leading-relaxed" >
+
+
+Convert, Resize, Compress and more...
+< / p >
+< / div >
+< / div >
+< div
+
+
+class ="mt-6 flex justify-end" >
+
+< span
+
+
+class ="w-7 h-7 rounded-full bg-white/20 flex items-center justify-center text-xs hover:bg-white/30 transition" >
+
+< i
+
+
+class ="fa-solid fa-arrow-right" > < / i >
+
+< / span >
+< / div >
+< / div >
+
+< !-- 4.
+Video / Audio
+Converter -->
+< div
+onclick = "switchView('media')"
+
+
+class ="card-hover cursor-pointer rounded-2xl bg-gradient-to-br from-purple-500 to-indigo-700 p-5 text-white relative overflow-hidden shadow-md" >
+
+< div
+
+
+class ="flex items-start gap-3.5" >
+
+< div
+
+
+class ="w-12 h-12 rounded-2xl bg-white flex items-center justify-center text-purple-600 shadow-sm shrink-0" >
+
+< i
+
+
+class ="fa-solid fa-photo-film text-xl" > < / i >
+
+< / div >
+< div
+
+
+class ="pr-4" >
+
+< h4
+
+
+class ="font-bold text-sm" > Video / Audio Converter < / h4 >
+
+< p
+
+
+class ="text-[11px] text-purple-100 mt-1 leading-relaxed" >
+
+
+Convert
+Video & Audio in multiple
+formats...
+< / p >
+< / div >
+< / div >
+< div
+
+
+class ="mt-6 flex justify-end" >
+
+< span
+
+
+class ="w-7 h-7 rounded-full bg-white/20 flex items-center justify-center text-xs hover:bg-white/30 transition" >
+
+< i
+
+
+class ="fa-solid fa-arrow-right" > < / i >
+
+< / span >
+< / div >
+< / div >
+
+< !-- 5.
+CorelDRAW
+Support -->
+< div
+onclick = "switchView('corel')"
+
+
+class ="card-hover cursor-pointer rounded-2xl bg-gradient-to-br from-green-500 to-emerald-700 p-5 text-white relative overflow-hidden shadow-md" >
+
+< div
+
+
+class ="flex items-start gap-3.5" >
+
+< div
+
+
+class ="w-12 h-12 rounded-2xl bg-white flex items-center justify-center text-green-600 shadow-sm shrink-0" >
+
+< i
+
+
+class ="fa-solid fa-parachute-box text-2xl" > < / i >
+
+< / div >
+< div
+
+
+class ="pr-4" >
+
+< h4
+
+
+class ="font-bold text-sm" > CorelDRAW Support < / h4 >
+
+< p
+
+
+class ="text-[11px] text-green-100 mt-1 leading-relaxed" >
+
+
+Open, Edit, Convert
+CDR
+Files...
+< / p >
+< / div >
+< / div >
+< div
+
+
+class ="mt-6 flex justify-end" >
+
+< span
+
+
+class ="w-7 h-7 rounded-full bg-white/20 flex items-center justify-center text-xs hover:bg-white/30 transition" >
+
+< i
+
+
+class ="fa-solid fa-arrow-right" > < / i >
+
+< / span >
+< / div >
+< / div >
+
+< !-- 6.
+AI
+Poster & Flex
+Designer -->
+< div
+onclick = "switchView('poster')"
+
+
+class ="card-hover cursor-pointer rounded-2xl bg-gradient-to-br from-pink-500 to-rose-600 p-5 text-white relative overflow-hidden shadow-md" >
+
+< div
+
+
+class ="flex items-start gap-3.5" >
+
+< div
+
+
+class ="w-12 h-12 rounded-2xl bg-white flex items-center justify-center text-pink-600 shadow-sm shrink-0" >
+
+< i
+
+
+class ="fa-solid fa-palette text-2xl" > < / i >
+
+< / div >
+< div
+
+
+class ="pr-4" >
+
+< h4
+
+
+class ="font-bold text-sm" > AI Poster & Flex Designer < / h4 >
+
+< p
+
+
+class ="text-[11px] text-pink-100 mt-1 leading-relaxed" >
+
+
+Create
+Posters, Flex, Banners and more...
+< / p >
+< / div >
+< / div >
+< div
+
+
+class ="mt-6 flex justify-end" >
+
+< span
+
+
+class ="w-7 h-7 rounded-full bg-white/20 flex items-center justify-center text-xs hover:bg-white/30 transition" >
+
+< i
+
+
+class ="fa-solid fa-arrow-right" > < / i >
+
+< / span >
+< / div >
+< / div >
+
+< !-- 7.
+Printing
+Press
+Tools -->
+< div
+onclick = "switchView('print')"
+
+
+class ="card-hover cursor-pointer rounded-2xl bg-gradient-to-br from-amber-500 to-orange-600 p-5 text-white relative overflow-hidden shadow-md" >
+
+< div
+
+
+class ="flex items-start gap-3.5" >
+
+< div
+
+
+class ="w-12 h-12 rounded-2xl bg-white flex items-center justify-center text-orange-600 shadow-sm shrink-0" >
+
+< i
+
+
+class ="fa-solid fa-print text-2xl" > < / i >
+
+< / div >
+< div
+
+
+class ="pr-4" >
+
+< h4
+
+
+class ="font-bold text-sm" > Printing Press Tools < / h4 >
+
+< p
+
+
+class ="text-[11px] text-amber-100 mt-1 leading-relaxed" >
+
+
+Print, Layout, Color, Bleed and more...
+< / p >
+< / div >
+< / div >
+< div
+
+
+class ="mt-6 flex justify-end" >
+
+< span
+
+
+class ="w-7 h-7 rounded-full bg-white/20 flex items-center justify-center text-xs hover:bg-white/30 transition" >
+
+< i
+
+
+class ="fa-solid fa-arrow-right" > < / i >
+
+< / span >
+< / div >
+< / div >
+
+< !-- 8.
+Billing
+System -->
+< div
+onclick = "switchView('billing')"
+
+
+class ="card-hover cursor-pointer rounded-2xl bg-gradient-to-br from-blue-600 to-indigo-700 p-5 text-white relative overflow-hidden shadow-md" >
+
+< div
+
+
+class ="flex items-start gap-3.5" >
+
+< div
+
+
+class ="w-12 h-12 rounded-2xl bg-white flex items-center justify-center text-blue-600 shadow-sm shrink-0" >
+
+< i
+
+
+class ="fa-solid fa-file-invoice-dollar text-2xl" > < / i >
+
+< / div >
+< div
+
+
+class ="pr-4" >
+
+< h4
+
+
+class ="font-bold text-sm" > Billing System < / h4 >
+
+< p
+
+
+class ="text-[11px] text-blue-100 mt-1 leading-relaxed" >
+
+
+Create
+Bills, Manage
+Customers and Reports...
+< / p >
+< / div >
+< / div >
+< div
+
+
+class ="mt-6 flex justify-end" >
+
+< span
+
+
+class ="w-7 h-7 rounded-full bg-white/20 flex items-center justify-center text-xs hover:bg-white/30 transition" >
+
+< i
+
+
+class ="fa-solid fa-arrow-right" > < / i >
+
+< / span >
+< / div >
+< / div >
+< / div >
+
+< !-- Bottom
+Tip
+Bar -->
+< div
+
+
+class ="bg-blue-50/90 dark:bg-slate-800/90 border border-blue-200/60 dark:border-slate-700 rounded-xl px-4 py-2.5 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-slate-600 dark:text-slate-300" >
+
+< div
+
+
+class ="flex items-center gap-2.5" >
+
+< i
+
+
+class ="fa-regular fa-lightbulb text-blue-600 dark:text-amber-400 text-base" > < / i >
+
+< span > < strong > Tip: < / strong > Use
+the
+sidebar
+to
+quickly
+access
+any
+tool. & nbsp; | & nbsp;
+Press < kbd
+
+
+class ="px-1.5 py-0.5 bg-white dark:bg-slate-900 rounded border border-slate-300 dark:border-slate-600 font-mono text-[10px]" > Ctrl + K < / kbd > to run studio commands.< / span >
+
+< / div >
+< div
+
+
+class ="font-script text-xl font-bold text-navy-900 dark:text-blue-300 tracking-wide" >
+
+
+Make
+It
+Happen
+< / div >
+< / div >
+< / div >
+
+< div
+id = "view-module"
+
+
+class ="hidden max-w-6xl mx-auto space-y-6" >
+
+< !-- Module
+Top
+Breadcrumb
+Bar -->
+< div
+
+
+class ="flex flex-wrap items-center justify-between gap-4 bg-white dark:bg-slate-800 p-4 rounded-2xl shadow-sm border border-slate-200/80 dark:border-slate-700" >
+
+< div
+
+
+class ="flex items-center gap-3" >
+
+< button
+onclick = "switchView('dashboard')"
+
+
+class ="w-9 h-9 rounded-xl bg-slate-100 dark:bg-slate-700 hover:bg-blue-600 hover:text-white flex items-center justify-center transition" >
+
+< i
+
+
+class ="fa-solid fa-arrow-left" > < / i >
+
+< / button >
+< div
+id = "moduleIconBox"
+
+
+class ="w-11 h-11 rounded-xl bg-blue-600 text-white flex items-center justify-center text-xl shadow-md" >
+
+< i
+id = "moduleIcon"
+
+
+class ="fa-solid fa-cube" > < / i >
+
+< / div >
+< div >
+< h2
+id = "moduleTitle"
+
+
+class ="text-lg font-bold text-slate-800 dark:text-white" > Module Title < / h2 >
+
+< p
+id = "moduleSubtitle"
+
+
+class ="text-xs text-slate-500 dark:text-slate-400" > Module description goes here < / p >
+
+< / div >
+< / div >
+< div
+
+
+class ="flex items-center gap-2" >
+
+< button
+onclick = "toggleTerminal()"
+
+
+class ="px-3 py-2 rounded-xl bg-slate-900 text-amber-400 hover:bg-slate-800 text-xs font-mono flex items-center gap-2" >
+
+< i
+
+
+class ="fa-solid fa-terminal" > < / i > Run CLI Command
+
+< / button >
+< button
+onclick = "switchView('dashboard')"
+
+
+class ="px-3 py-2 rounded-xl bg-blue-50 dark:bg-slate-700 text-blue-600 dark:text-blue-300 text-xs font-semibold hover:bg-blue-100 transition" >
+
+
+Back
+to
+Dashboard
+< / button >
+< / div >
+< / div >
+
+< !-- Dynamic
+Module
+Content
+Container -->
+< div
+id = "moduleContentArea"
+
+
+class ="bg-white dark:bg-slate-800 rounded-2xl p-6 shadow-sm border border-slate-200/80 dark:border-slate-700 min-h-[420px]" >
+
+< !-- Injected
+via
+JS -->
+< / div >
+< / div >
+
+< / main >
+< / div >
+
+< div
+id = "terminalModal"
+
+
+class ="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 hidden items-center justify-center p-4" >
+
+< div
+
+
+class ="bg-navy-950 border border-blue-500/30 rounded-2xl w-full max-w-2xl shadow-2xl overflow-hidden flex flex-col" >
+
+< !-- Terminal
+Header -->
+< div
+
+
+class ="bg-navy-900 px-4 py-3 border-b border-white/10 flex items-center justify-between" >
+
+< div
+
+
+class ="flex items-center gap-2" >
+
+< span
+
+
+class ="w-3 h-3 rounded-full bg-rose-500 inline-block" > < / span >
+
+< span
+
+
+class ="w-3 h-3 rounded-full bg-amber-400 inline-block" > < / span >
+
+< span
+
+
+class ="w-3 h-3 rounded-full bg-emerald-500 inline-block" > < / span >
+
+< span
+
+
+class ="ml-2 text-xs font-mono text-blue-300 font-semibold" > maa-durga-studio @ v2.0:~ (Command Runner) <
+
+/ span >
+< / div >
+< button
+onclick = "toggleTerminal()"
+
+
+class ="text-slate-400 hover:text-white" >
+
+< i
+
+
+class ="fa-solid fa-xmark" > < / i >
+
+< / button >
+< / div >
+
+< !-- Quick
+Command
+Chips -->
+< div
+
+
+class ="bg-navy-900/50 px-4 py-2 border-b border-white/5 flex flex-wrap items-center gap-1.5 text-[11px]" >
+
+< span
+
+
+class ="text-slate-400 mr-1" > Quick Run:<
+
+    / span >
+< button
+onclick = "runQuickCommand('help')"
+
+
+class ="px-2 py-0.5 rounded bg-blue-500/20 text-blue-300 hover:bg-blue-500/30 font-mono" > help < / button >
+
+< button
+onclick = "runQuickCommand('open pdf')"
+
+
+class ="px-2 py-0.5 rounded bg-rose-500/20 text-rose-300 hover:bg-rose-500/30 font-mono" > open pdf < / button >
+
+< button
+onclick = "runQuickCommand('open poster')"
+
+
+class ="px-2 py-0.5 rounded bg-pink-500/20 text-pink-300 hover:bg-pink-500/30 font-mono" > open poster < / button >
+
+< button
+onclick = "runQuickCommand('open billing')"
+
+
+class ="px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300 hover:bg-emerald-500/30 font-mono" > open billing < / button >
+
+< button
+onclick = "runQuickCommand('theme toggle')"
+
+
+class ="px-2 py-0.5 rounded bg-amber-500/20 text-amber-300 hover:bg-amber-500/30 font-mono" > theme toggle < / button >
+
+< button
+onclick = "runQuickCommand('status')"
+
+
+class ="px-2 py-0.5 rounded bg-purple-500/20 text-purple-300 hover:bg-purple-500/30 font-mono" > status < / button >
+
+< button
+onclick = "runQuickCommand('clear')"
+
+
+class ="px-2 py-0.5 rounded bg-slate-700 text-slate-300 hover:bg-slate-600 font-mono" > clear < / button >
+
+< / div >
+
+< !-- Terminal
+Output
+Log -->
+< div
+id = "terminalOutput"
+
+
+class ="p-4 font-mono text-xs text-slate-200 space-y-2 h-72 overflow-y-auto bg-navy-950/90" >
+
+< div
+
+
+class ="text-amber-400 font-semibold" > Welcome to Maa Durga All- in -One Studio CLI v2.0! < / div >
+
+< div
+
+
+class ="text-slate-400" > Type < span class ="text-blue-400" > 'help' < / span > to see available commands, or click any Quick Run chip above.< / div >
+
+< / div >
+
+< !-- Terminal
+Input
+Row -->
+< form
+onsubmit = "handleCommandSubmit(event)"
+
+
+class ="bg-navy-900 px-4 py-3 border-t border-white/10 flex items-center gap-2" >
+
+< span
+
+
+class ="text-emerald-400 font-mono text-sm font-bold" > studio & gt; < / span >
+
+< input
+id = "terminalInput"
+type = "text"
+placeholder = "Type command e.g. 'open poster', 'convert pdf', 'bill new', 'help'..."
+autocomplete = "off"
+
+
+class ="w-full bg-transparent text-white font-mono text-xs focus:outline-none" >
+
+< button
+type = "submit"
+
+
+class ="px-3 py-1 bg-blue-600 hover:bg-blue-500 text-white rounded text-xs font-semibold transition" > Run < / button >
+
+< / form >
+< / div >
+< / div >
+
+< !-- Settings
+Modal -->
+< div
+id = "settingsModal"
+
+
+class ="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 hidden items-center justify-center p-4" >
+
+< div
+
+
+class ="bg-white dark:bg-slate-800 rounded-2xl w-full max-w-md p-6 shadow-xl border border-slate-200 dark:border-slate-700" >
+
+< div
+
+
+class ="flex items-center justify-between pb-3 border-b border-slate-200 dark:border-slate-700" >
+
+< h3
+
+
+class ="font-bold text-base flex items-center gap-2" > < i class ="fa-solid fa-gear text-blue-600" > < / i > Studio Settings < / h3 >
+
+< button
+onclick = "closeModal('settingsModal')"
+
+
+class ="text-slate-400 hover:text-slate-600" > < i class ="fa-solid fa-xmark" > < / i > < / button >
+
+< / div >
+< div
+
+
+class ="py-4 space-y-4 text-xs" >
+
+< div
+
+
+class ="flex items-center justify-between" >
+
+< div >
+< p
+
+
+class ="font-semibold" > Color Profile (Printing Press) < / p >
+
+< p
+
+
+class ="text-slate-400" > Default color mode for Flex & Offset exports < / p >
+
+< / div >
+< select
+
+
+class ="bg-slate-100 dark:bg-slate-700 px-3 py-1.5 rounded-lg font-medium" >
+
+< option > CMYK(300
+DPI) < / option >
+< option > RGB
+Digital < / option >
+< / select >
+< / div >
+< div
+
+
+class ="flex items-center justify-between" >
+
+< div >
+< p
+
+
+class ="font-semibold" > Auto-Save Billing Invoices < / p >
+
+< p
+
+
+class ="text-slate-400" > Save customer bills automatically to local storage < / p >
+
+< / div >
+< input
+type = "checkbox"
+checked
+
+
+class ="w-4 h-4 accent-blue-600" >
+
+< / div >
+< div
+
+
+class ="flex items-center justify-between" >
+
+< div >
+< p
+
+
+class ="font-semibold" > Hardware Acceleration < / p >
+
+< p
+
+
+class ="text-slate-400" > Fast AI Poster & Video rendering < / p >
+
+< / div >
+< input
+type = "checkbox"
+checked
+
+
+class ="w-4 h-4 accent-blue-600" >
+
+< / div >
+< / div >
+< div
+
+
+class ="flex justify-end gap-2 pt-2" >
+
+< button
+onclick = "closeModal('settingsModal'); showToast('Settings saved successfully!')"
+
+
+class ="px-4 py-2 bg-blue-600 text-white rounded-xl text-xs font-semibold hover:bg-blue-700" > Save Changes < / button >
+
+< / div >
+< / div >
+< / div >
+
+< !-- About
+Modal -->
+< div
+id = "aboutModal"
+
+
+class ="fixed inset-0 bg-black/60 backdrop-blur-sm z-50 hidden items-center justify-center p-4" >
+
+< div
+
+
+class ="bg-white dark:bg-slate-800 rounded-2xl w-full max-w-md p-6 shadow-xl border border-slate-200 dark:border-slate-700 text-center space-y-3" >
+
+< div
+
+
+class ="w-16 h-16 rounded-full bg-gradient-to-br from-amber-400 to-red-600 mx-auto flex items-center justify-center text-white text-2xl shadow-lg" >
+
+< i
+
+
+class ="fa-solid fa-star" > < / i >
+
+< / div >
+< h3
+
+
+class ="font-bold text-lg" > Maa Durga All- in -One Studio < / h3 >
+
+< p
+
+
+class ="text-xs text-blue-600 dark:text-blue-400 font-semibold" > Premium Edition v2.0 • 8 Active Modules < / p >
+
+< p
+
+
+class ="text-xs text-slate-500 dark:text-slate-300 leading-relaxed" >
+
+
+Designed
+for complete Printing Press, Flex Designing, CorelDRAW workflow, Media Conversion, and GST Billing Management in one unified dashboard.
+< / p >
+< div
+
+
+class ="pt-3" >
+
+< button
+onclick = "closeModal('aboutModal')"
+
+
+class ="px-6 py-2 bg-blue-600 text-white rounded-xl text-xs font-semibold hover:bg-blue-700" > Close < / button >
+
+< / div >
+< / div >
+< / div >
+
+< !-- Toast
+Notification -->
+< div
+id = "toast"
+
+
+class ="fixed bottom-5 right-5 bg-navy-900 text-white px-4 py-3 rounded-xl shadow-lg border border-blue-500/30 flex items-center gap-3 text-xs font-medium transform translate-y-20 opacity-0 transition-all duration-300 z-50" >
+
+< i
+
+
+class ="fa-solid fa-circle-check text-emerald-400 text-base" > < / i >
+
+< span
+id = "toastMsg" > Operation
+completed < / span >
+< / div >
+
+< script >
+// Live
+Clock
+Update
+function
+updateClock()
+{
+    const
+now = new
+Date();
+const
+dateOptions = {weekday: 'long', day: 'numeric', month: 'long', year: 'numeric'};
+const
+timeOptions = {hour: '2-digit', minute: '2-digit', hour12: true};
+document.getElementById('liveDate').textContent = now.toLocaleDateString('en-GB', dateOptions);
+document.getElementById('liveTime').textContent = now.toLocaleTimeString('en-US', timeOptions);
+}
+setInterval(updateClock, 1000);
+updateClock();
+
+// Theme
+Toggle
+Logic
+function
+toggleTheme()
+{
+    const
+html = document.documentElement;
+const
+indicator = document.getElementById('themeIndicator');
+const
+icon = document.getElementById('themeIcon');
+if (html.classList.contains('dark'))
+{
+    html.classList.remove('dark');
+indicator.classList.remove('translate-x-8', 'bg-indigo-600');
+indicator.classList.add('translate-x-0', 'bg-blue-500');
+icon.className = 'fa-solid fa-sun text-xs';
+showToast('Switched to Light Theme');
+} else {
+    html.classList.add('dark');
+indicator.classList.remove('translate-x-0', 'bg-blue-500');
+indicator.classList.add('translate-x-8', 'bg-indigo-600');
+icon.className = 'fa-solid fa-moon text-xs';
+showToast('Switched to Dark Theme');
+}
+}
+
+// Toast
+Helper
+function
+showToast(message)
+{
+    const
+toast = document.getElementById('toast');
+document.getElementById('toastMsg').textContent = message;
+toast.classList.remove('translate-y-20', 'opacity-0');
+setTimeout(() = > {
+    toast.classList.add('translate-y-20', 'opacity-0');
+}, 3000);
+}
+
+// Modal
+Helpers
+function
+openModal(id)
+{
+    const
+m = document.getElementById(id);
+m.classList.remove('hidden');
+m.classList.add('flex');
+}
+function
+closeModal(id)
+{
+    const
+m = document.getElementById(id);
+m.classList.add('hidden');
+m.classList.remove('flex');
+}
+
+function
+toggleFullscreen()
+{
+if (!document.fullscreenElement)
+{
+    document.documentElement.requestFullscreen().catch(() = > {});
+} else {
+    document.exitFullscreen().catch(() = > {});
+}
+}
+
+// Module
+Data & Interactive
+Templates
+const
+modulesData = {
+    pdf: {
+        title: 'PDF Converter & Toolkit',
+        subtitle: 'Convert, Merge, Split, Protect and Compress PDF documents',
+        color: 'bg-rose-600',
+        icon: 'fa-regular fa-file-pdf',
+        render: () = > `
+                       < div
+
+
+class ="grid grid-cols-1 lg:grid-cols-3 gap-6" >
+
+< div
+
+
+class ="lg:col-span-2 space-y-4" >
+
+< div
+
+
+class ="border-2 border-dashed border-rose-300 dark:border-rose-500/40 rounded-2xl p-8 text-center bg-rose-50/50 dark:bg-slate-900/50" >
+
+< i
+
+
+class ="fa-solid fa-cloud-arrow-up text-4xl text-rose-500 mb-3" > < / i >
+
+< h4
+
+
+class ="font-bold text-sm" > Select or Drop PDF Files Here < / h4 >
+
+< p
+
+
+class ="text-xs text-slate-400 mt-1" > Supports PDF, DOCX, JPG to PDF batch processing < / p >
+
+< input
+type = "file"
+id = "pdfFileInput"
+
+
+class ="hidden" onchange="simulateFileAction('PDF File Loaded: ' + this.files[0]?.name)" >
+
+< button
+onclick = "document.getElementById('pdfFileInput').click()"
+
+
+class ="mt-4 px-5 py-2 bg-rose-600 hover:bg-rose-700 text-white rounded-xl text-xs font-semibold shadow" > Choose PDF File < / button >
+
+< / div >
+< div
+
+
+class ="grid grid-cols-2 sm:grid-cols-4 gap-3" >
+
+< button
+onclick = "simulateProcess('Merging PDFs...')"
+
+
+class ="p-3 rounded-xl border border-slate-200 dark:border-slate-700 hover:border-rose-500 text-left transition" >
+
+< i
+
+
+class ="fa-solid fa-object-group text-rose-500 text-lg" > < / i >
+
+< p
+
+
+class ="font-bold text-xs mt-1" > Merge PDF < / p >
+
+< p
+
+
+class ="text-[10px] text-slate-400" > Combine multiple files < / p >
+
+< / button >
+< button
+onclick = "simulateProcess('Splitting PDF Pages...')"
+
+
+class ="p-3 rounded-xl border border-slate-200 dark:border-slate-700 hover:border-rose-500 text-left transition" >
+
+< i
+
+
+class ="fa-solid fa-scissors text-rose-500 text-lg" > < / i >
+
+< p
+
+
+class ="font-bold text-xs mt-1" > Split PDF < / p >
+
+< p
+
+
+class ="text-[10px] text-slate-400" > Extract specific pages < / p >
+
+< / button >
+< button
+onclick = "simulateProcess('Compressing PDF (Reduced by 68%)...')"
+
+
+class ="p-3 rounded-xl border border-slate-200 dark:border-slate-700 hover:border-rose-500 text-left transition" >
+
+< i
+
+
+class ="fa-solid fa-compress text-rose-500 text-lg" > < / i >
+
+< p
+
+
+class ="font-bold text-xs mt-1" > Compress < / p >
+
+< p
+
+
+class ="text-[10px] text-slate-400" > Reduce file size < / p >
+
+< / button >
+< button
+onclick = "simulateProcess('Applying 256-bit Password Protection...')"
+
+
+class ="p-3 rounded-xl border border-slate-200 dark:border-slate-700 hover:border-rose-500 text-left transition" >
+
+< i
+
+
+class ="fa-solid fa-lock text-rose-500 text-lg" > < / i >
+
+< p
+
+
+class ="font-bold text-xs mt-1" > Protect PDF < / p >
+
+< p
+
+
+class ="text-[10px] text-slate-400" > Add password security < / p >
+
+< / button >
+< / div >
+< / div >
+< div
+
+
+class ="bg-slate-50 dark:bg-slate-900 p-4 rounded-2xl border border-slate-200 dark:border-slate-700 flex flex-col justify-between" >
+
+< div >
+< h4
+
+
+class ="font-bold text-xs uppercase tracking-wider text-slate-400" > Output Console < / h4 >
+
+< div
+id = "processLog"
+
+
+class ="mt-3 font-mono text-xs text-slate-600 dark:text-slate-300 space-y-1.5" >
+
+< div > [Ready]
+PDF
+Engine
+v2
+.0
+initialized. < / div >
+< div > [Info]
+Select
+a
+tool or drop
+a
+file
+to
+start. < / div >
+< / div >
+< / div >
+< button
+onclick = "simulateProcess('Exporting Press-Ready PDF...')"
+
+
+class ="w-full py-2.5 bg-rose-600 text-white rounded-xl text-xs font-bold hover:bg-rose-700" > Run Quick PDF Export < / button >
+
+< / div >
+< / div >
+`
+},
+word: {
+title: 'Word / Excel Converter',
+subtitle: 'Convert DOCX, XLSX, CSV to PDF and editable formats',
+color: 'bg-blue-600',
+icon: 'fa-solid fa-file-word',
+render: () = > `
+< div
+
+
+class ="space-y-4" >
+
+< div
+
+
+class ="grid grid-cols-1 md:grid-cols-3 gap-4" >
+
+< div
+onclick = "simulateProcess('Converting Word Document to Print PDF...')"
+
+
+class ="p-5 rounded-2xl bg-blue-50 dark:bg-slate-900 border border-blue-200 dark:border-slate-700 cursor-pointer hover:shadow-md transition" >
+
+< i
+
+
+class ="fa-solid fa-file-word text-3xl text-blue-600 mb-2" > < / i >
+
+< h4
+
+
+class ="font-bold text-sm" > Word to PDF < / h4 >
+
+< p
+
+
+class ="text-xs text-slate-500 mt-1" > Keep fonts & KrutiDev / Unicode Hindi formatting intact.< / p >
+
+< / div >
+< div
+onclick = "simulateProcess('Converting Excel Sheet to PDF Table...')"
+
+
+class ="p-5 rounded-2xl bg-emerald-50 dark:bg-slate-900 border border-emerald-200 dark:border-slate-700 cursor-pointer hover:shadow-md transition" >
+
+< i
+
+
+class ="fa-solid fa-file-excel text-3xl text-emerald-600 mb-2" > < / i >
+
+< h4
+
+
+class ="font-bold text-sm" > Excel to PDF / CSV < / h4 >
+
+< p
+
+
+class ="text-xs text-slate-500 mt-1" > Auto-fit columns for billing & stock sheets.< / p >
+
+< / div >
+< div
+onclick = "simulateProcess('Running OCR on PDF to Editable DOCX...')"
+
+
+class ="p-5 rounded-2xl bg-indigo-50 dark:bg-slate-900 border border-indigo-200 dark:border-slate-700 cursor-pointer hover:shadow-md transition" >
+
+< i
+
+
+class ="fa-solid fa-wand-magic-sparkles text-3xl text-indigo-600 mb-2" > < / i >
+
+< h4
+
+
+class ="font-bold text-sm" > PDF to Word (OCR) < / h4 >
+
+< p
+
+
+class ="text-xs text-slate-500 mt-1" > Extract editable text from scanned documents.< / p >
+
+< / div >
+< / div >
+< div
+id = "processLog"
+
+
+class ="p-4 rounded-xl bg-slate-900 text-emerald-400 font-mono text-xs" >[Office Suite Ready] Click any conversion mode above to execute.< / div >
+
+< / div >
+`
+},
+photo: {
+title: 'Photo Converter & Passport Studio',
+subtitle: 'Resize, Compress, Remove Background & Passport Photo Sheet Maker',
+color: 'bg-teal-600',
+icon: 'fa-regular fa-image',
+render: () = > `
+< div
+
+
+class ="grid grid-cols-1 md:grid-cols-2 gap-6" >
+
+< div
+
+
+class ="space-y-4" >
+
+< h4
+
+
+class ="font-bold text-sm" > Quick Photo Controls < / h4 >
+
+< div
+
+
+class ="grid grid-cols-2 gap-3 text-xs" >
+
+< div >
+< label
+
+
+class ="text-slate-500 block mb-1" > Target Format < / label >
+
+< select
+
+
+class ="w-full p-2.5 rounded-xl bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-slate-700" >
+
+< option > JPG(High
+Quality) < / option >
+< option > PNG(Transparent) < / option >
+< option > WEBP(Web
+Optimized) < / option >
+< option > TIFF(CMYK
+Press) < / option >
+< / select >
+< / div >
+< div >
+< label
+
+
+class ="text-slate-500 block mb-1" > Preset Size < / label >
+
+< select
+
+
+class ="w-full p-2.5 rounded-xl bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-slate-700" >
+
+< option > Passport
+Size(3.5
+x
+4.5
+cm) < / option >
+< option > A4
+Photo
+Sheet(300
+DPI) < / option >
+< option > Social
+Media
+HD(1080
+x1080) < / option >
+< / select >
+< / div >
+< / div >
+< div
+
+
+class ="flex gap-3" >
+
+< button
+onclick = "simulateProcess('Generating 12 Passport Photos on 4x6 Sheet...')"
+
+
+class ="flex-1 py-2.5 bg-teal-600 text-white rounded-xl text-xs font-bold hover:bg-teal-700" > Make Passport Sheet < / button >
+
+< button
+onclick = "simulateProcess('Converting & Compressing Image Batch...')"
+
+
+class ="flex-1 py-2.5 bg-slate-800 text-white rounded-xl text-xs font-bold hover:bg-slate-700" > Convert Image < / button >
+
+< / div >
+< / div >
+< div
+id = "processLog"
+
+
+class ="p-4 rounded-xl bg-slate-900 text-teal-300 font-mono text-xs flex items-center" >
+
+
+[Photo Lab Ready]
+Select
+preset and click
+Make
+Passport
+Sheet or Convert.
+< / div >
+< / div >
+`
+},
+media: {
+title: 'Video / Audio Converter',
+subtitle: 'Convert MP4, MP3, WAV, MKV for WhatsApp, YouTube & Wedding Invitations',
+color: 'bg-purple-600',
+icon: 'fa-solid fa-film',
+render: () = > `
+< div
+
+
+class ="space-y-4" >
+
+< div
+
+
+class ="grid grid-cols-1 sm:grid-cols-3 gap-4" >
+
+< button
+onclick = "simulateProcess('Encoding MP4 Video (1080p H.264)...')"
+
+
+class ="p-4 rounded-2xl border border-purple-200 dark:border-slate-700 hover:bg-purple-50 dark:hover:bg-slate-900 text-left" >
+
+< i
+
+
+class ="fa-solid fa-video text-purple-600 text-xl" > < / i >
+
+< h4
+
+
+class ="font-bold text-sm mt-2" > Video to MP4 HD < / h4 >
+
+< p
+
+
+class ="text-xs text-slate-400" > Universal format for mobile & TV < / p >
+
+< / button >
+< button
+onclick = "simulateProcess('Extracting 320kbps MP3 Audio Track...')"
+
+
+class ="p-4 rounded-2xl border border-purple-200 dark:border-slate-700 hover:bg-purple-50 dark:hover:bg-slate-900 text-left" >
+
+< i
+
+
+class ="fa-solid fa-music text-purple-600 text-xl" > < / i >
+
+< h4
+
+
+class ="font-bold text-sm mt-2" > Video to MP3 Audio < / h4 >
+
+< p
+
+
+class ="text-xs text-slate-400" > Extract devotional songs & audio < / p >
+
+< / button >
+< button
+onclick = "simulateProcess('Compressing Wedding Invitation Video for WhatsApp...')"
+
+
+class ="p-4 rounded-2xl border border-purple-200 dark:border-slate-700 hover:bg-purple-50 dark:hover:bg-slate-900 text-left" >
+
+< i
+
+
+class ="fa-brands fa-whatsapp text-emerald-500 text-xl" > < / i >
+
+< h4
+
+
+class ="font-bold text-sm mt-2" > WhatsApp Invite Compressor < / h4 >
+
+< p
+
+
+class ="text-xs text-slate-400" > Fit video under 16MB without quality loss < / p >
+
+< / button >
+< / div >
+< div
+id = "processLog"
+
+
+class ="p-4 rounded-xl bg-slate-900 text-purple-300 font-mono text-xs" >[FFmpeg Studio Wrapper] Ready for high-speed media conversion.< / div >
+
+< / div >
+`
+},
+corel: {
+title: 'CorelDRAW Support (.CDR Toolkit)',
+subtitle: 'Open, Convert CDR versions (X7, 2020, 2024), Convert Fonts to Curves',
+color: 'bg-green-600',
+icon: 'fa-solid fa-parachute-box',
+render: () = > `
+< div
+
+
+class ="space-y-4" >
+
+< div
+
+
+class ="grid grid-cols-1 md:grid-cols-3 gap-4" >
+
+< div
+onclick = "simulateProcess('Downgrading CDR file to CorelDRAW X7 (v17) format...')"
+
+
+class ="p-4 rounded-2xl bg-green-50 dark:bg-slate-900 border border-green-200 dark:border-slate-700 cursor-pointer" >
+
+< h4
+
+
+class ="font-bold text-sm text-green-700 dark:text-green-400" > CDR Version Converter < / h4 >
+
+< p
+
+
+class ="text-xs text-slate-500 mt-1" > Convert CDR 2024 / 2022 files down to X7 or X3 for older press machines.< / p >
+
+< / div >
+< div
+onclick = "simulateProcess('Converting all Hindi/English text objects to Curves (Ctrl+Q)...')"
+
+
+class ="p-4 rounded-2xl bg-green-50 dark:bg-slate-900 border border-green-200 dark:border-slate-700 cursor-pointer" >
+
+< h4
+
+
+class ="font-bold text-sm text-green-700 dark:text-green-400" > Auto Text-to-Curves < / h4 >
+
+< p
+
+
+class ="text-xs text-slate-500 mt-1" > Prevent missing font errors before sending CDR file to printing press.< / p >
+
+< / div >
+< div
+onclick = "simulateProcess('Exporting CDR layout to CMYK EPS & Press PDF...')"
+
+
+class ="p-4 rounded-2xl bg-green-50 dark:bg-slate-900 border border-green-200 dark:border-slate-700 cursor-pointer" >
+
+< h4
+
+
+class ="font-bold text-sm text-green-700 dark:text-green-400" > CDR to CMYK PDF / EPS < / h4 >
+
+< p
+
+
+class ="text-xs text-slate-500 mt-1" > Direct export with bleed & crop marks enabled.< / p >
+
+< / div >
+< / div >
+< div
+id = "processLog"
+
+
+class ="p-4 rounded-xl bg-slate-900 text-green-400 font-mono text-xs" >[CDR Engine Active] Ready to process CorelDRAW graphic files.< / div >
+
+< / div >
+`
+},
+poster: {
+title: 'AI Poster & Flex Designer',
+subtitle: 'Design Shop Banners, Festival Posters, Wedding Cards & Political Flex',
+color: 'bg-pink-600',
+icon: 'fa-solid fa-palette',
+render: () = > `
+< div
+
+
+class ="grid grid-cols-1 lg:grid-cols-12 gap-6" >
+
+< div
+
+
+class ="lg:col-span-5 space-y-3 text-xs" >
+
+< div >
+< label
+
+
+class ="font-semibold block mb-1" > Banner / Poster Heading < / label >
+
+< input
+id = "posterHeadingInput"
+type = "text"
+value = "Maa Durga Digital Press"
+oninput = "updateLivePoster()"
+
+
+class ="w-full p-2.5 rounded-xl bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-slate-700" >
+
+< / div >
+< div >
+< label
+
+
+class ="font-semibold block mb-1" > Tagline / Sub-text < / label >
+
+< input
+id = "posterSubInput"
+type = "text"
+value = "Flex • Shadi Card • Bill Book • Offset Printing"
+oninput = "updateLivePoster()"
+
+
+class ="w-full p-2.5 rounded-xl bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-slate-700" >
+
+< / div >
+< div >
+< label
+
+
+class ="font-semibold block mb-1" > Contact / Address Footer < / label >
+
+< input
+id = "posterFooterInput"
+type = "text"
+value = "Main Road, Patna • Call: +91 98765 43210"
+oninput = "updateLivePoster()"
+
+
+class ="w-full p-2.5 rounded-xl bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-slate-700" >
+
+< / div >
+< button
+onclick = "simulateProcess('Exporting High-Res 300 DPI Flex Banner TIFF...')"
+
+
+class ="w-full py-2.5 bg-pink-600 hover:bg-pink-700 text-white rounded-xl font-bold shadow" > Download Print-Ready Flex < / button >
+
+< div
+id = "processLog"
+
+
+class ="p-2.5 rounded-xl bg-slate-900 text-pink-300 font-mono text-[11px]" >[AI Flex Canvas] Type above to preview live banner.< / div >
+
+< / div >
+< div
+
+
+class ="lg:col-span-7 flex items-center justify-center" >
+
+< div
+id = "livePosterPreview"
+
+
+class ="w-full rounded-2xl bg-gradient-to-r from-red-800 via-orange-600 to-amber-500 p-6 text-white shadow-xl border-4 border-yellow-300 text-center space-y-3 relative overflow-hidden" >
+
+< div
+
+
+class ="text-[11px] uppercase tracking-widest text-yellow-200 font-semibold" > | | Jai Maa Durga | | < / div >
+
+< h3
+id = "previewHeading"
+
+
+class ="text-2xl md:text-3xl font-extrabold drop-shadow" > Maa Durga Digital Press < / h3 >
+
+< p
+id = "previewSub"
+
+
+class ="text-sm bg-black/30 py-1.5 px-4 rounded-full inline-block font-medium" > Flex • Shadi Card • Bill Book • Offset Printing < / p >
+
+< div
+id = "previewFooter"
+
+
+class ="pt-3 border-t border-white/20 text-xs text-yellow-100 font-semibold" > Main Road, Patna • Call: +91
+
+
+98765
+43210 < / div >
+< / div >
+< / div >
+< / div >
+`
+},
+print: {
+title: 'Printing Press Tools',
+subtitle: 'CMYK Color Separation, Bleed & Crop Marks, Paper Cost Calculator',
+color: 'bg-orange-600',
+icon: 'fa-solid fa-print',
+render: () = > `
+< div
+
+
+class ="grid grid-cols-1 md:grid-cols-2 gap-6" >
+
+< div
+
+
+class ="space-y-3 text-xs" >
+
+< h4
+
+
+class ="font-bold text-sm" > Flex / Offset Job Cost Calculator < / h4 >
+
+< div
+
+
+class ="grid grid-cols-2 gap-3" >
+
+< div >
+< label
+
+
+class ="block text-slate-500 mb-1" > Width (Feet) < / label >
+
+< input
+id = "calcW"
+type = "number"
+value = "10"
+oninput = "calcFlex()"
+
+
+class ="w-full p-2 rounded-xl bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-slate-700" >
+
+< / div >
+< div >
+< label
+
+
+class ="block text-slate-500 mb-1" > Height (Feet) < / label >
+
+< input
+id = "calcH"
+type = "number"
+value = "5"
+oninput = "calcFlex()"
+
+
+class ="w-full p-2 rounded-xl bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-slate-700" >
+
+< / div >
+< div >
+< label
+
+
+class ="block text-slate-500 mb-1" > Rate per Sq.Ft (₹) < / label >
+
+< input
+id = "calcRate"
+type = "number"
+value = "12"
+oninput = "calcFlex()"
+
+
+class ="w-full p-2 rounded-xl bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-slate-700" >
+
+< / div >
+< div >
+< label
+
+
+class ="block text-slate-500 mb-1" > Quantity < / label >
+
+< input
+id = "calcQty"
+type = "number"
+value = "1"
+oninput = "calcFlex()"
+
+
+class ="w-full p-2 rounded-xl bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-slate-700" >
+
+< / div >
+< / div >
+< div
+
+
+class ="p-4 rounded-xl bg-amber-50 dark:bg-slate-900 border border-amber-200 dark:border-slate-700 flex items-center justify-between" >
+
+< span
+
+
+class ="font-semibold" > Total Area: <
+
+
+    strong
+id = "calcArea" > 50 < / strong > sq.ft < / span >
+< span
+
+
+class ="text-base font-extrabold text-orange-600" > Total: ₹
+
+    < span
+id = "calcTotal" > 600 < / span > < / span >
+< / div >
+< / div >
+< div
+
+
+class ="space-y-3" >
+
+< h4
+
+
+class ="font-bold text-sm" > Pre-Press Actions < / h4 >
+
+< button
+onclick = "simulateProcess('Generating C-M-Y-K 4-Plate Separation Preview...')"
+
+
+class ="w-full p-3 rounded-xl border border-slate-200 dark:border-slate-700 hover:border-orange-500 text-left text-xs font-semibold flex justify-between items-center" >
+
+< span > CMYK
+Plate
+Separation
+Check < / span >
+< i
+
+
+class ="fa-solid fa-layer-group text-orange-500" > < / i >
+
+< / button >
+< button
+onclick = "simulateProcess('Adding 3mm Bleed & Corner Crop Marks...')"
+
+
+class ="w-full p-3 rounded-xl border border-slate-200 dark:border-slate-700 hover:border-orange-500 text-left text-xs font-semibold flex justify-between items-center" >
+
+< span > Add
+3
+mm
+Bleed & Registration
+Marks < / span >
+< i
+
+
+class ="fa-solid fa-crop-simple text-orange-500" > < / i >
+
+< / button >
+< div
+id = "processLog"
+
+
+class ="p-3 rounded-xl bg-slate-900 text-amber-300 font-mono text-xs" >[Press Ready] CMYK calibration accurate.< / div >
+
+< / div >
+< / div >
+`
+},
+billing: {
+title: 'Billing System & Invoice Generator',
+subtitle: 'Create Customer Bills, Estimate Slips, and Daily Press Sales Reports',
+color: 'bg-blue-700',
+icon: 'fa-solid fa-file-invoice-dollar',
+render: () = > `
+< div
+
+
+class ="space-y-4 text-xs" >
+
+< div
+
+
+class ="grid grid-cols-1 sm:grid-cols-4 gap-3" >
+
+< input
+id = "billCust"
+type = "text"
+placeholder = "Customer Name"
+value = "Rajesh Enterprise"
+
+
+class ="p-2.5 rounded-xl bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-slate-700" >
+
+< input
+id = "billItem"
+type = "text"
+placeholder = "Job Description"
+value = "1000 Visiting Cards + 2 Flex"
+
+
+class ="p-2.5 rounded-xl bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-slate-700 sm:col-span-2" >
+
+< input
+id = "billAmt"
+type = "number"
+placeholder = "Amount (₹)"
+value = "1450"
+
+
+class ="p-2.5 rounded-xl bg-slate-100 dark:bg-slate-900 border border-slate-300 dark:border-slate-700" >
+
+< / div >
+< div
+
+
+class ="flex gap-2" >
+
+< button
+onclick = "addInvoiceRow()"
+
+
+class ="px-4 py-2 bg-blue-600 text-white rounded-xl font-bold hover:bg-blue-700" > + Add to Bill < / button >
+
+< button
+onclick = "window.print()"
+
+
+class ="px-4 py-2 bg-emerald-600 text-white rounded-xl font-bold hover:bg-emerald-700" > < i class ="fa-solid fa-print mr-1" > < / i > Print Invoice < / button >
+
+< / div >
+< div
+
+
+class ="overflow-x-auto rounded-xl border border-slate-200 dark:border-slate-700" >
+
+< table
+
+
+class ="w-full text-left" >
+
+< thead
+
+
+class ="bg-slate-100 dark:bg-slate-900 text-slate-500" >
+
+< tr >
+< th
+
+
+class ="p-3" > Invoice  # </th>
+
+< th
+
+
+class ="p-3" > Customer < / th >
+
+< th
+
+
+class ="p-3" > Job Details < / th >
+
+< th
+
+
+class ="p-3" > Amount < / th >
+
+< th
+
+
+class ="p-3" > Status < / th >
+
+< / tr >
+< / thead >
+< tbody
+id = "invoiceTableBody"
+
+
+class ="divide-y divide-slate-200 dark:divide-slate-700" >
+
+< tr >
+< td
+
+
+class ="p-3 font-mono" >  # MD-101</td>
+
+< td
+
+
+class ="p-3 font-semibold" > Sharma Sweets < / td >
+
+< td
+
+
+class ="p-3" > Star Flex Banner (8x4 ft) < / td >
+
+< td
+
+
+class ="p-3 font-bold" > ₹640 < / td >
+
+< td
+
+
+class ="p-3" > < span class ="px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-700 text-[10px] font-bold" > PAID < / span > < / td >
+
+< / tr >
+< tr >
+< td
+
+
+class ="p-3 font-mono" >  # MD-102</td>
+
+< td
+
+
+class ="p-3 font-semibold" > Anjali Wedding Cards < / td >
+
+< td
+
+
+class ="p-3" > 300 Shadi Cards Screen Print < / td >
+
+< td
+
+
+class ="p-3 font-bold" > ₹4, 200 < / td >
+
+< td
+
+
+class ="p-3" > < span class ="px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-700 text-[10px] font-bold" > PAID < / span > < / td >
+
+< / tr >
+< / tbody >
+< / table >
+< / div >
+< / div >
+`
+},
+support: {
+title: '24/7 Help & Support Center',
+subtitle: 'Instant assistance, keyboard shortcuts, and studio troubleshooting',
+color: 'bg-indigo-600',
+icon: 'fa-solid fa-headset',
+render: () = > `
+< div
+
+
+class ="grid grid-cols-1 md:grid-cols-2 gap-6 text-xs" >
+
+< div
+
+
+class ="space-y-3" >
+
+< h4
+
+
+class ="font-bold text-sm" > Studio CLI Commands Reference < / h4 >
+
+< ul
+
+
+class ="space-y-2 font-mono bg-slate-900 text-slate-200 p-4 rounded-xl" >
+
+< li > < span
+
+
+class ="text-amber-400" > open[tool] < / span > - Open pdf, word, photo, media, corel, poster, print, billing < / li >
+
+< li > < span
+
+
+class ="text-amber-400" > dashboard < / span > - Return to main studio screen < / li >
+
+< li > < span
+
+
+class ="text-amber-400" > theme toggle < / span > - Switch between Light and Dark mode < / li >
+
+< li > < span
+
+
+class ="text-amber-400" > status < / span > - Check all 8 active modules health < / li >
+
+< li > < span
+
+
+class ="text-amber-400" > clear < / span > - Clear command terminal logs < / li >
+
+< / ul >
+< / div >
+< div
+
+
+class ="space-y-3" >
+
+< h4
+
+
+class ="font-bold text-sm" > Direct Support Desk < / h4 >
+
+< p
+
+
+class ="text-slate-500" > Need help configuring your printer, plotter, or CorelDRAW macro? < / p >
+
+< div
+
+
+class ="p-4 rounded-xl bg-indigo-50 dark:bg-slate-900 border border-indigo-200 dark:border-slate-700 space-y-2" >
+
+< p
+
+
+class ="font-bold text-indigo-600 dark:text-indigo-400" > < i class ="fa-solid fa-phone mr-1" > < / i > Helpline: 1800 - DURGA - STUDIO(
+    24 / 7) <
+
+/ p >
+< p > < i
+
+
+class ="fa-solid fa-envelope mr-1" > < / i > support @ maadurgastudio.in < / p >
+
+< / div >
+< / div >
+< / div >
+`
+}
+};
+
+// Switch
+Between
+Dashboard and Tool
+Views
+function
+switchView(viewKey)
+{
+// Update
+Sidebar
+Active
+State
+document.querySelectorAll('.sidebar-item').forEach(btn= > {
+    btn.classList.remove('active-nav', 'text-white');
+btn.classList.add('text-slate-300');
+});
+const
+activeBtn = document.getElementById('nav-' + viewKey);
+if (activeBtn)
+{
+activeBtn.classList.add('active-nav', 'text-white');
+activeBtn.classList.remove('text-slate-300');
+}
+
+const
+dash = document.getElementById('view-dashboard');
+const
+mod = document.getElementById('view-module');
+
+if (viewKey === 'dashboard')
+{
+dash.classList.remove('hidden');
+mod.classList.add('hidden');
+} else if (modulesData[viewKey]) {
+const
+data = modulesData[viewKey];
+dash.classList.add('hidden');
+mod.classList.remove('hidden');
+document.getElementById('moduleTitle').textContent = data.title;
+document.getElementById('moduleSubtitle').textContent = data.subtitle;
+document.getElementById('moduleIconBox').className = `w - 11
+h - 11
+rounded - xl ${data.color}
+text - white
+flex
+items - center
+justify - center
+text - xl
+shadow - md
+`;
+document.getElementById('moduleIcon').className = data.icon;
+document.getElementById('moduleContentArea').innerHTML = data.render();
+}
+}
+
+// Interactive
+Module
+Functions
+function
+simulateProcess(msg)
+{
+    const
+log = document.getElementById('processLog');
+if (log)
+{
+const
+line = document.createElement('div');
+line.className = 'text-amber-400 mt-1';
+line.textContent = ` > ${msg}[DONE]
+`;
+log.appendChild(line);
+log.scrollTop = log.scrollHeight;
+}
+showToast(msg);
+}
+
+function
+simulateFileAction(msg)
+{
+    simulateProcess(msg);
+}
+
+function
+updateLivePoster()
+{
+    document.getElementById('previewHeading').textContent = document.getElementById(
+    'posterHeadingInput').value | | 'Maa Durga Studio';
+document.getElementById('previewSub').textContent = document.getElementById('posterSubInput').value;
+document.getElementById('previewFooter').textContent = document.getElementById('posterFooterInput').value;
+}
+
+function
+calcFlex()
+{
+    const
+w = parseFloat(document.getElementById('calcW').value) | | 0;
+const
+h = parseFloat(document.getElementById('calcH').value) | | 0;
+const
+rate = parseFloat(document.getElementById('calcRate').value) | | 0;
+const
+qty = parseFloat(document.getElementById('calcQty').value) | | 1;
+const
+area = w * h * qty;
+document.getElementById('calcArea').textContent = area;
+document.getElementById('calcTotal').textContent = (area * rate).toLocaleString('en-IN');
+}
+
+let
+invoiceCount = 103;
+function
+addInvoiceRow()
+{
+    const
+cust = document.getElementById('billCust').value | | 'Walk-in Customer';
+const
+item = document.getElementById('billItem').value | | 'Printing Service';
+const
+amt = document.getElementById('billAmt').value | | '0';
+const
+tbody = document.getElementById('invoiceTableBody');
+const
+tr = document.createElement('tr');
+tr.innerHTML = `
+               < td
+
+
+class ="p-3 font-mono" >  # MD-${invoiceCount++}</td>
+
+< td
+
+
+class ="p-3 font-semibold" > ${cust} < / td >
+
+< td
+
+
+class ="p-3" > ${item} < / td >
+
+< td
+
+
+class ="p-3 font-bold" > ₹${amt} < / td >
+
+< td
+
+
+class ="p-3" > < span class ="px-2 py-0.5 rounded-full bg-emerald-100 text-emerald-700 text-[10px] font-bold" > PAID < / span > < / td >
+
+
+`;
+tbody.prepend(tr);
+showToast(`Invoice
+added
+for ${cust}`);
+}
+
+// Terminal
+CLI
+Runner
+Logic
+function
+toggleTerminal()
+{
+const
+modal = document.getElementById('terminalModal');
+if (modal.classList.contains('hidden')) {
+modal.classList.remove('hidden');
+modal.classList.add('flex');
+setTimeout(() = > document.getElementById('terminalInput').focus(), 50);
+} else {
+modal.classList.add('hidden');
+modal.classList.remove('flex');
+}
+}
+
+function
+appendTerminalLog(text, color='text-slate-200')
+{
+const
+out = document.getElementById('terminalOutput');
+const
+div = document.createElement('div');
+div.className = color;
+div.innerHTML = text;
+out.appendChild(div);
+out.scrollTop = out.scrollHeight;
+}
+
+function
+runQuickCommand(cmd)
+{
+const
+modal = document.getElementById('terminalModal');
+if (modal.classList.contains('hidden')) {
+toggleTerminal();
+}
+executeStudioCommand(cmd);
+}
+
+function
+handleCommandSubmit(e)
+{
+e.preventDefault();
+const
+input = document.getElementById('terminalInput');
+const
+cmd = input.value.trim();
+if (!cmd) return;
+input.value = '';
+executeStudioCommand(cmd);
+}
+
+function
+executeStudioCommand(rawCmd)
+{
+const
+cmd = rawCmd.toLowerCase().trim();
+appendTerminalLog(`studio & gt; ${rawCmd}
+`, 'text-emerald-400 font-bold');
+
+if (cmd === 'help') {
+appendTerminalLog(`Available Studio Commands:
+    • < span
+
+
+class ="text-amber-300" > open pdf < / span > - Launch PDF Converter
+
+• < span
+
+
+class ="text-amber-300" > open word < / span > - Launch Word / Excel Converter
+
+• < span
+
+
+class ="text-amber-300" > open photo < / span > - Launch Photo Converter
+
+• < span
+
+
+class ="text-amber-300" > open media < / span > - Launch Video / Audio Converter
+
+• < span
+
+
+class ="text-amber-300" > open corel < / span > - Launch CorelDRAW Support
+
+• < span
+
+
+class ="text-amber-300" > open poster < / span > - Launch AI Poster & Flex Designer
+
+• < span
+
+
+class ="text-amber-300" > open print < / span > - Launch Printing Press Calculator
+
+• < span
+
+
+class ="text-amber-300" > open billing < / span > - Launch GST Billing System
+
+• < span
+
+
+class ="text-amber-300" > dashboard < / span > - Back to Main Home Screen
+
+• < span
+
+
+class ="text-amber-300" > theme toggle < / span > - Switch Light / Dark Mode
+
+• < span
+
+
+class ="text-amber-300" > status < / span > - Check Studio v2.0 Module Status
+
+• < span
+
+
+class ="text-amber-300" > clear < / span > - Clear terminal output`, 'text-blue-200 whitespace-pre-line');
+} else if (cmd == = 'clear') {
+document.getElementById('terminalOutput').innerHTML = '';
+} else if (cmd == = 'status') {
+appendTerminalLog(`[OK] Maa Durga All- in -One Studio v2.0
+
+
+[OK]
+8 / 8
+Modules
+Online & Ready
+[OK]
+CMYK
+Press
+Engine & CDR
+Support
+Active
+`, 'text-emerald-300 whitespace-pre-line');
+} else if (cmd === 'theme toggle' | | cmd == = 'theme') {
+toggleTheme();
+appendTerminalLog(`[Theme] Color theme switched successfully.`, 'text-amber-300');
+} else if (cmd == = 'dashboard' | | cmd == = 'home') {
+switchView('dashboard');
+appendTerminalLog(`[Nav] Opened Main Dashboard.`, 'text-blue-300');
+} else if (cmd.startsWith('open ')) {
+const target = cmd.replace('open ', '').trim();
+const map = {
+pdf: 'pdf', word: 'word', excel: 'word', photo: 'photo',
+video: 'media', audio: 'media', media: 'media',
+corel: 'corel', cdr: 'corel', poster: 'poster', flex: 'poster',
+print: 'print', billing: 'billing', bill: 'billing', support: 'support'
+};
+if (map[target]) {
+switchView(map[target]);
+appendTerminalLog(`[Executed]
+Launched
+module: ${modulesData[map[target]].title}
+`, 'text-amber-300');
+} else {
+appendTerminalLog(`[Error]
+Unknown
+module
+'${target}'.Type
+'help'
+for module names.`, 'text-rose-400');
+}
+} else {
+    appendTerminalLog(`[Executed]
+Custom
+studio
+task
+"${rawCmd}"
+completed
+successfully!`, 'text-blue-300');
+showToast(`Executed: ${rawCmd}
+`);
+}
+}
+
+// Keyboard
+Shortcut
+Ctrl + K
+for Command Runner
+window.addEventListener('keydown', (e) = > {
+if ((e.ctrlKey | | e.metaKey) & & e.key.toLowerCase() == = 'k') {
+e.preventDefault();
+toggleTerminal();
+} else if (e.key === 'Escape') {
+closeModal('terminalModal');
+closeModal('settingsModal');
+closeModal('aboutModal');
+}
+});
+< / script >
+    < / body >
+        < / html >
